@@ -7,10 +7,10 @@ def judge(ene_hand, usr_hand):
     diff = usr_hand - ene_hand if diff >= 0 else diff + 3
     if diff == 0:
         return "draw"
-    elif diff in [-1,2] :
-        return "win"
-    else:
+    elif diff  == 1:
         return "lose"
+    elif diff == 2:
+        return "win"
 
 if __name__ == "__main__":
     ene_hand = random.randint(0,2)
