@@ -4,6 +4,7 @@ hands = ["ぐー","ちょき","ぱー"]
 
 def judge(ene_hand, usr_hand):
     diff = usr_hand - ene_hand
+    diff = usr_hand - ene_hand if diff >= 0 else diff + 3
     if diff == 0:
         return "draw"
     elif diff in [-1,2] :
